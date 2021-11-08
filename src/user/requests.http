@@ -1,0 +1,31 @@
+### create new user
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "email": "quang@quang.com",
+    "password": "quangquang23"
+}
+
+### find one user
+GET http://localhost:3000/auth/5
+
+
+
+### find all with email
+GET http://localhost:3000/auth?email=quang@quang.com
+
+
+
+### delete user by id
+DELETE http://localhost:3000/auth/42
+
+
+
+### update user
+PATCH http://localhost:3000/auth/522
+Content-Type: application/json
+
+{
+    "password" : "updatepassword"
+}

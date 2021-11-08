@@ -14,6 +14,8 @@ import { Reports } from './reports/reports.entity';
       database: 'db.sqlite',
       entities: [User, Reports],
       synchronize: true,
+      // automatic update entity to sql table
+      // normally write migration file -> to change the structure of database
     }),
     UserModule,
     ReportsModule,
