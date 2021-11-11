@@ -3,8 +3,8 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "test1@test1.com",
-  "password": "test1"
+  "email": "test1@test12.com",
+  "password": "test12"
 }
 ### sign in
 POST http://localhost:3000/auth/signin
