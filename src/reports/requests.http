@@ -1,0 +1,20 @@
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+  "make": "toyota",
+  "model": "land cruiser",
+  "year": 2017,
+  "mileage": 10000,
+  "lng": 0,
+  "lat": 0,
+  "price": 100000
+}
+
+### approve an existing report
+PATCH http://localhost:3000/reports/3
+content-type: application/json
+
+{
+    "approved": false
+}

@@ -21,7 +21,7 @@ import { CurrentUser } from './decorators/current-user.decorators';
 // import { CurrentUserInterceptor } from './interceptors/current-user.interceptor';
 // UseInterceptors -> nestjs common
 import { User } from './user.entity';
-import { AuthGuard } from './guards/auth.guard';
+import { AuthGuard } from '../guards/auth.guard';
 
 @Controller('auth')
 @Serialize(UserDto)
